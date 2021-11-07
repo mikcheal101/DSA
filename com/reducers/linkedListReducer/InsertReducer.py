@@ -5,7 +5,7 @@ from com.reducers.ILinkedListReducer import ILinkedListReducer
 class InsertReducer(ILinkedListReducer):
     @staticmethod
     def perfom_action(*args):
-        linked_list, data = args
+        (linked_list, data) = args
         # create a new node to hold the data
         new_node = Node(data)
 
