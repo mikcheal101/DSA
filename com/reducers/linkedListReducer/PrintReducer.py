@@ -9,7 +9,7 @@ class PrintReducer(ILinkedListReducer):
         final_string = ["[+] Linked List: "]
 
         # tranverse the list 
-        while current_node.next_node:
+        while current_node:
             final_string.append(" -> ({})".format(current_node.data))
             current_node = current_node.next_node
 
